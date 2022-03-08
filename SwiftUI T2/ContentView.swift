@@ -9,16 +9,42 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            ZStack(alignment: .topLeading) {
-                Rectangle()
-                    .foregroundColor(.blue)
+        VStack {
+            HStack(alignment: .bottom, spacing: 16.0) {
                 Text("Hello 1")
                     .font(.title)
                 Text("Hello 2")
             }
-            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            .frame(width: 320.0)
+            Divider()
+            HStack(alignment: .bottom, spacing: 16.0) {
+                Text("Hello 3")
+                    .font(.title)
+                Spacer()
+                Text("Hello 4")
+            }
+            Divider()
+            HStack(alignment: .bottom, spacing: 16.0) {
+                Text("Hello 5")
+                    .font(.title)
+                Text("Hello 6")
+                Spacer()
+            }
+            Divider()
+            HStack(alignment: .bottom, spacing: 16.0) {
+                Spacer()
+                Text("Hello 7")
+                    .font(.title)
+                Text("Hello 8")
+            }
+            Divider()
+            HStack(alignment: .bottom, spacing: 16.0) {
+                Spacer()
+                Text("Hello 9")
+                    .font(.title)
+                Spacer()
+                Text("Hello 10")
+                Spacer()
+            }
         }
     }
 }
